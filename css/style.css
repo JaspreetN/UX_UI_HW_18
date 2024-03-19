@@ -65,3 +65,33 @@ footer ul li {
     display: inline-block;
     margin-right: 10px;
 }
+
+.flexContainer {
+    display:flex
+}
+
+.flexChild {
+    width: 33%;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'project1 project 2 project3';
+    grid-gap: 20px;
+}
+
+.project1 {
+    grid-area: project1;
+}
+
+.project2 {
+    grid-area: project2;
+}
+
+.project3 {
+    grid-area: project3;
+}
