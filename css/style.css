@@ -84,14 +84,24 @@ footer ul li {
     grid-gap: 20px;
 }
 
-.project1 {
-    grid-area: project1;
-}
-
-.project2 {
-    grid-area: project2;
-}
-
-.project3 {
-    grid-area: project3;
+@media only screen and (max-width: 600px) {
+    /* CSS styles for smaller screens */
+    body {
+        font-size: 14px;
+    }
+    .flexcontainer {
+        flex-direction:column;
+    }
+    .flexChild {
+    width: 100%;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-areas:
+            'project1'
+            'project2'
+            'project3';
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
 }
